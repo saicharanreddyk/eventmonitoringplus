@@ -3,16 +3,19 @@
     "mobileDisabled": false,
     "description": "For exec-level summary of interactions in the system down to individual page views and components being used.",
     "state": {
-        "dataSourceLinks": [
-            {
-                "fields": [
+        "dataSourceLinksInfo": {
+            "enableAutomaticLinking": false,
+            "excludeRelationships": [],
+            "links": [
+                {
+                 "fields": [
                     {
-                        "dataSourceName": "LightningPageView",
+                        "dataSourceName": "LightningPageViewWithUsers",
                         "dataSourceType": "dataset",
                         "fieldName": "User.Name"
                     },
                     {
-                        "dataSourceName": "LightningInteraction",
+                        "dataSourceName": "LightningInteractionWithUsers",
                         "dataSourceType": "dataset",
                         "fieldName": "User.Name"
                     }
@@ -23,12 +26,12 @@
             {
                 "fields": [
                     {
-                        "dataSourceName": "LightningPageView",
+                        "dataSourceName": "LightningPageViewWithUsers",
                         "dataSourceType": "dataset",
                         "fieldName": "User.Profile.Name"
                     },
                     {
-                        "dataSourceName": "LightningInteraction",
+                        "dataSourceName": "LightningInteractionWithUsers",
                         "dataSourceType": "dataset",
                         "fieldName": "User.Profile.Name"
                     }
@@ -39,12 +42,12 @@
             {
                 "fields": [
                     {
-                        "dataSourceName": "LightningPageView",
+                        "dataSourceName": "LightningPageViewWithUsers",
                         "dataSourceType": "dataset",
                         "fieldName": "User.User.Role.Name"
                     },
                     {
-                        "dataSourceName": "LightningInteraction",
+                        "dataSourceName": "LightningInteractionWithUsers",
                         "dataSourceType": "dataset",
                         "fieldName": "User.User.Role.Name"
                     }
@@ -55,12 +58,12 @@
             {
                 "fields": [
                     {
-                        "dataSourceName": "LightningPageView",
+                        "dataSourceName": "LightningPageViewWithUsers",
                         "dataSourceType": "dataset",
                         "fieldName": "PAGE_APP_NAME"
                     },
                     {
-                        "dataSourceName": "LightningInteraction",
+                        "dataSourceName": "LightningInteractionWithUsers",
                         "dataSourceType": "dataset",
                         "fieldName": "PAGE_APP_NAME"
                     }
@@ -71,12 +74,12 @@
             {
                 "fields": [
                     {
-                        "dataSourceName": "LightningPageView",
+                        "dataSourceName": "LightningPageViewWithUsers",
                         "dataSourceType": "dataset",
                         "fieldName": "PAGE_ENTITY_TYPE"
                     },
                     {
-                        "dataSourceName": "LightningInteraction",
+                        "dataSourceName": "LightningInteractionWithUsers",
                         "dataSourceType": "dataset",
                         "fieldName": "PAGE_ENTITY_TYPE"
                     }
@@ -87,25 +90,24 @@
             {
                 "fields": [
                     {
-                        "dataSourceName": "LightningPageView",
+                        "dataSourceName": "LightningPageViewWithUsers",
                         "dataSourceType": "dataset",
                         "fieldName": "TIMESTAMP_DERIVED"
                     },
                     {
-                        "dataSourceName": "LightningInteraction",
+                        "dataSourceName": "LightningInteractionWithUsers",
                         "dataSourceType": "dataset",
                         "fieldName": "TIMESTAMP_DERIVED"
                     }
                 ],
                 "label": "Date",
                 "name": "Link_3520"
-            }
-        ],
+                }]},
         "filters": [
             {
                 "dataset": {
                     "id": "0Fb09000000r0J3CAI",
-                    "name": "LightningPageView",
+                    "name": "LightningPageViewWithUsers",
                     "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                 },
                 "dependent": true,
@@ -119,7 +121,7 @@
             {
                 "dataset": {
                     "id": "0Fb09000000r0J3CAI",
-                    "name": "LightningPageView",
+                    "name": "LightningPageViewWithUsers",
                     "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                 },
                 "dependent": true,
@@ -133,7 +135,7 @@
             {
                 "dataset": {
                     "id": "0Fb09000000r0J3CAI",
-                    "name": "LightningPageView",
+                    "name": "LightningPageViewWithUsers",
                     "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                 },
                 "dependent": true,
@@ -147,7 +149,7 @@
             {
                 "dataset": {
                     "id": "0Fb09000000r0J3CAI",
-                    "name": "LightningPageView",
+                    "name": "LightningPageViewWithUsers",
                     "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                 },
                 "dependent": true,
@@ -161,7 +163,7 @@
             {
                 "dataset": {
                     "id": "0Fb09000000r0J3CAI",
-                    "name": "LightningPageView",
+                    "name": "LightningPageViewWithUsers",
                     "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                 },
                 "dependent": true,
@@ -175,7 +177,7 @@
             {
                 "dataset": {
                     "id": "0Fb09000000r0J3CAI",
-                    "name": "LightningPageView",
+                    "name": "LightningPageViewWithUsers",
                     "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                 },
                 "dependent": true,
@@ -1213,8 +1215,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J1CAI",
-                        "label": "LightningInteraction",
-                        "name": "LightningInteraction",
+                        "label": "LightningInteractionWithUsers",
+                        "name": "LightningInteractionWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J1CAI"
                     }
                 ],
@@ -1427,8 +1429,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J1CAI",
-                        "label": "LightningInteraction",
-                        "name": "LightningInteraction",
+                        "label": "LightningInteractionWithUsers",
+                        "name": "LightningInteractionWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J1CAI"
                     }
                 ],
@@ -1529,8 +1531,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J3CAI",
-                        "label": "LightningPageView",
-                        "name": "LightningPageView",
+                        "label": "LightningPageViewWithUsers",
+                        "name": "LightningPageViewWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                     }
                 ],
@@ -1625,8 +1627,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J1CAI",
-                        "label": "LightningInteraction",
-                        "name": "LightningInteraction",
+                        "label": "LightningInteractionWithUsers",
+                        "name": "LightningInteractionWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J1CAI"
                     }
                 ],
@@ -1761,8 +1763,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J1CAI",
-                        "label": "LightningInteraction",
-                        "name": "LightningInteraction",
+                        "label": "LightningInteractionWithUsers",
+                        "name": "LightningInteractionWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J1CAI"
                     }
                 ],
@@ -2107,8 +2109,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J1CAI",
-                        "label": "LightningInteraction",
-                        "name": "LightningInteraction",
+                        "label": "LightningInteractionWithUsers",
+                        "name": "LightningInteractionWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J1CAI"
                     }
                 ],
@@ -2237,8 +2239,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J1CAI",
-                        "label": "LightningInteraction",
-                        "name": "LightningInteraction",
+                        "label": "LightningInteractionWithUsers",
+                        "name": "LightningInteractionWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J1CAI"
                     }
                 ],
@@ -2452,8 +2454,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J1CAI",
-                        "label": "LightningInteraction",
-                        "name": "LightningInteraction",
+                        "label": "LightningInteractionWithUsers",
+                        "name": "LightningInteractionWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J1CAI"
                     }
                 ],
@@ -2639,8 +2641,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J3CAI",
-                        "label": "LightningPageView",
-                        "name": "LightningPageView",
+                        "label": "LightningPageViewWithUsers",
+                        "name": "LightningPageViewWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                     }
                 ],
@@ -2839,8 +2841,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J1CAI",
-                        "label": "LightningInteraction",
-                        "name": "LightningInteraction",
+                        "label": "LightningInteractionWithUsers",
+                        "name": "LightningInteractionWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J1CAI"
                     }
                 ],
@@ -3026,8 +3028,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J1CAI",
-                        "label": "LightningInteraction",
-                        "name": "LightningInteraction",
+                        "label": "LightningInteractionWithUsers",
+                        "name": "LightningInteractionWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J1CAI"
                     }
                 ],
@@ -3166,8 +3168,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J1CAI",
-                        "label": "LightningInteraction",
-                        "name": "LightningInteraction",
+                        "label": "LightningInteractionWithUsers",
+                        "name": "LightningInteractionWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J1CAI"
                     }
                 ],
@@ -3365,8 +3367,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J1CAI",
-                        "label": "LightningInteraction",
-                        "name": "LightningInteraction",
+                        "label": "LightningInteractionWithUsers",
+                        "name": "LightningInteractionWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J1CAI"
                     }
                 ],
@@ -3495,7 +3497,7 @@
                 "groups": [],
                 "label": "ApproxClickDeltaAll",
                 "numbers": [],
-                "query": "q = load \"LightningInteraction\";\nq = filter q by 'UI_EVENT_TYPE' == \"user\";\nq = filter q by 'UI_EVENT_SOURCE' == \"click\";\nq = filter q by !('TARGET_UI_ELEMENT' == \"relatedListSingleContainer\" || 'TARGET_UI_ELEMENT' is null);\nresult = group q by ('USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID', 'TIMESTAMP_DERIVED_Year', 'TIMESTAMP_DERIVED_Month', 'TIMESTAMP_DERIVED_Day', 'TIMESTAMP_DERIVED_Hour', 'TIMESTAMP_DERIVED_Minute', 'TIMESTAMP_DERIVED_Second');\nresult = foreach result generate q.'USER_ID' as 'USER_ID', q.'SESSION_KEY' as 'SESSION_KEY', q.'DEVICE_SESSION_ID' as 'DEVICE_SESSION_ID', q.'TIMESTAMP_DERIVED_Year' + \"~~~\" + q.'TIMESTAMP_DERIVED_Month' + \"~~~\" + q.'TIMESTAMP_DERIVED_Day' + \"~~~\" + q.'TIMESTAMP_DERIVED_Hour' + \"~~~\" + q.'TIMESTAMP_DERIVED_Minute' + \"~~~\" + q.'TIMESTAMP_DERIVED_Second' as 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second', avg(q.'UI_EVENT_TIMESTAMP') as 'A', unique(q.'DEVICE_SESSION_ID') as 'D';\nresult = group result by ('USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID', 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second');\nresult = foreach result generate 'USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID', 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second', first(A) as 'A', first(D) as 'D', sum(A) - sum(sum(A)) over ([-1..-1] partition by ('SESSION_KEY','DEVICE_SESSION_ID') order by ('SESSION_KEY','DEVICE_SESSION_ID','TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second')) as 'B', (sum(A) - sum(sum(A)) over ([-1..-1] partition by ('SESSION_KEY','DEVICE_SESSION_ID') order by ('SESSION_KEY','DEVICE_SESSION_ID','TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second'))) / 1000 as 'C';\nresult = group result by 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second';\nresult = group result by ('USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID');\nresult = foreach result generate 'USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID',coalesce(avg('C'),0) as 'AvgTime';\nresult = filter result by 'AvgTime'>0;\nresult = group result by ('USER_ID', 'SESSION_KEY');\nresult = foreach result generate 'USER_ID', 'SESSION_KEY',coalesce(avg('AvgTime'),0) as 'AvgTime';\nresult = filter result by 'AvgTime'>0;\nresult = group result by ('USER_ID');\nresult = foreach result generate 'USER_ID', coalesce(avg('AvgTime'),0) as 'AvgTime';\nresult = filter result by 'AvgTime'>0;\nresult = group result by all;\nresult = foreach result generate round(coalesce(avg('AvgTime'),0),0) as 'AvgTime';\nresult = limit result 2000;",
+                "query": "q = load \"LightningInteractionWithUsers\";\nq = filter q by 'UI_EVENT_TYPE' == \"user\";\nq = filter q by 'UI_EVENT_SOURCE' == \"click\";\nq = filter q by !('TARGET_UI_ELEMENT' == \"relatedListSingleContainer\" || 'TARGET_UI_ELEMENT' is null);\nresult = group q by ('USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID', 'TIMESTAMP_DERIVED_Year', 'TIMESTAMP_DERIVED_Month', 'TIMESTAMP_DERIVED_Day', 'TIMESTAMP_DERIVED_Hour', 'TIMESTAMP_DERIVED_Minute', 'TIMESTAMP_DERIVED_Second');\nresult = foreach result generate q.'USER_ID' as 'USER_ID', q.'SESSION_KEY' as 'SESSION_KEY', q.'DEVICE_SESSION_ID' as 'DEVICE_SESSION_ID', q.'TIMESTAMP_DERIVED_Year' + \"~~~\" + q.'TIMESTAMP_DERIVED_Month' + \"~~~\" + q.'TIMESTAMP_DERIVED_Day' + \"~~~\" + q.'TIMESTAMP_DERIVED_Hour' + \"~~~\" + q.'TIMESTAMP_DERIVED_Minute' + \"~~~\" + q.'TIMESTAMP_DERIVED_Second' as 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second', avg(q.'UI_EVENT_TIMESTAMP') as 'A', unique(q.'DEVICE_SESSION_ID') as 'D';\nresult = group result by ('USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID', 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second');\nresult = foreach result generate 'USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID', 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second', first(A) as 'A', first(D) as 'D', sum(A) - sum(sum(A)) over ([-1..-1] partition by ('SESSION_KEY','DEVICE_SESSION_ID') order by ('SESSION_KEY','DEVICE_SESSION_ID','TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second')) as 'B', (sum(A) - sum(sum(A)) over ([-1..-1] partition by ('SESSION_KEY','DEVICE_SESSION_ID') order by ('SESSION_KEY','DEVICE_SESSION_ID','TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second'))) / 1000 as 'C';\nresult = group result by 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second';\nresult = group result by ('USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID');\nresult = foreach result generate 'USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID',coalesce(avg('C'),0) as 'AvgTime';\nresult = filter result by 'AvgTime'>0;\nresult = group result by ('USER_ID', 'SESSION_KEY');\nresult = foreach result generate 'USER_ID', 'SESSION_KEY',coalesce(avg('AvgTime'),0) as 'AvgTime';\nresult = filter result by 'AvgTime'>0;\nresult = group result by ('USER_ID');\nresult = foreach result generate 'USER_ID', coalesce(avg('AvgTime'),0) as 'AvgTime';\nresult = filter result by 'AvgTime'>0;\nresult = group result by all;\nresult = foreach result generate round(coalesce(avg('AvgTime'),0),0) as 'AvgTime';\nresult = limit result 2000;",
                 "receiveFacetSource": {
                     "mode": "all",
                     "steps": []
@@ -3615,7 +3617,7 @@
                 "groups": [],
                 "label": "LatestDate",
                 "numbers": [],
-                "query": "q = load \"LightningInteraction\";\nq = foreach q generate date_to_string(toDate(TIMESTAMP_DERIVED_sec_epoch), \"yyyy-MM-dd\") as 'LatestDate';\nq = order q by 'LatestDate' desc;\nq = limit q 1;",
+                "query": "q = load \"LightningInteractionWithUsers\";\nq = foreach q generate date_to_string(toDate(TIMESTAMP_DERIVED_sec_epoch), \"yyyy-MM-dd\") as 'LatestDate';\nq = order q by 'LatestDate' desc;\nq = limit q 1;",
                 "receiveFacetSource": {
                     "mode": "all",
                     "steps": []
@@ -3734,8 +3736,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J1CAI",
-                        "label": "LightningInteraction",
-                        "name": "LightningInteraction",
+                        "label": "LightningInteractionWithUsers",
+                        "name": "LightningInteractionWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J1CAI"
                     }
                 ],
@@ -3885,18 +3887,18 @@
                     "type": "chart"
                 }
             },
-            "LightningPageViewHea_1": {
+            "LightningPageViewWithUsersHea_1": {
                 "broadcastFacet": true,
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J3CAI",
-                        "label": "LightningPageView",
-                        "name": "LightningPageView",
+                        "label": "LightningPageViewWithUsers",
+                        "name": "LightningPageViewWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                     }
                 ],
                 "isGlobal": false,
-                "label": "LightningPageViewHeatmap",
+                "label": "LightningPageViewWithUsersHeatmap",
                 "query": {
                     "measures": [
                         [
@@ -4076,8 +4078,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J3CAI",
-                        "label": "LightningPageView",
-                        "name": "LightningPageView",
+                        "label": "LightningPageViewWithUsers",
+                        "name": "LightningPageViewWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                     }
                 ],
@@ -4227,8 +4229,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J1CAI",
-                        "label": "LightningInteraction",
-                        "name": "LightningInteraction",
+                        "label": "LightningInteractionWithUsers",
+                        "name": "LightningInteractionWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J1CAI"
                     }
                 ],
@@ -4432,8 +4434,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J3CAI",
-                        "label": "LightningPageView",
-                        "name": "LightningPageView",
+                        "label": "LightningPageViewWithUsers",
+                        "name": "LightningPageViewWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                     }
                 ],
@@ -4594,8 +4596,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J3CAI",
-                        "label": "LightningPageView",
-                        "name": "LightningPageView",
+                        "label": "LightningPageViewWithUsers",
+                        "name": "LightningPageViewWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                     }
                 ],
@@ -4746,8 +4748,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J1CAI",
-                        "label": "LightningInteraction",
-                        "name": "LightningInteraction",
+                        "label": "LightningInteractionWithUsers",
+                        "name": "LightningInteractionWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J1CAI"
                     }
                 ],
@@ -4887,8 +4889,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J1CAI",
-                        "label": "LightningInteraction",
-                        "name": "LightningInteraction",
+                        "label": "LightningInteractionWithUsers",
+                        "name": "LightningInteractionWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J1CAI"
                     }
                 ],
@@ -5043,7 +5045,7 @@
                 "groups": [],
                 "label": "ApproxOfUserClickTimes",
                 "numbers": [],
-                "query": "q = load \"LightningInteraction\";\nq = filter q by 'UI_EVENT_TYPE' == \"user\";\nq = filter q by 'UI_EVENT_SOURCE' == \"click\";\nq = filter q by !('TARGET_UI_ELEMENT' == \"relatedListSingleContainer\" || 'TARGET_UI_ELEMENT' is null);\nresult = group q by ('USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID', 'TIMESTAMP_DERIVED_Year', 'TIMESTAMP_DERIVED_Month', 'TIMESTAMP_DERIVED_Day', 'TIMESTAMP_DERIVED_Hour', 'TIMESTAMP_DERIVED_Minute', 'TIMESTAMP_DERIVED_Second');\nresult = foreach result generate q.'USER_ID' as 'USER_ID', q.'SESSION_KEY' as 'SESSION_KEY', q.'DEVICE_SESSION_ID' as 'DEVICE_SESSION_ID', q.'TIMESTAMP_DERIVED_Year' + \"~~~\" + q.'TIMESTAMP_DERIVED_Month' + \"~~~\" + q.'TIMESTAMP_DERIVED_Day' + \"~~~\" + q.'TIMESTAMP_DERIVED_Hour' + \"~~~\" + q.'TIMESTAMP_DERIVED_Minute' + \"~~~\" + q.'TIMESTAMP_DERIVED_Second' as 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second', avg(q.'UI_EVENT_TIMESTAMP') as 'A', unique(q.'DEVICE_SESSION_ID') as 'D';\nresult = group result by ('USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID', 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second');\nresult = foreach result generate 'USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID', 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second', first(A) as 'A', first(D) as 'D', sum(A) - sum(sum(A)) over ([-1..-1] partition by ('SESSION_KEY','DEVICE_SESSION_ID') order by ('SESSION_KEY','DEVICE_SESSION_ID','TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second')) as 'B', (sum(A) - sum(sum(A)) over ([-1..-1] partition by ('SESSION_KEY','DEVICE_SESSION_ID') order by ('SESSION_KEY','DEVICE_SESSION_ID','TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second'))) / 1000 as 'C';\nresult = group result by 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second';\nresult = group result by ('USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID');\nresult = foreach result generate 'USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID',coalesce(avg('C'),0) as 'AvgTime';\nresult = filter result by 'AvgTime'>0;\nresult = group result by ('USER_ID', 'SESSION_KEY');\nresult = foreach result generate 'USER_ID', 'SESSION_KEY',coalesce(avg('AvgTime'),0) as 'AvgTime';\nresult = filter result by 'AvgTime'>0;\nresult = group result by ('USER_ID');\nresult = foreach result generate 'USER_ID', coalesce(avg('AvgTime'),0) as 'AvgTime';\nresult = filter result by 'AvgTime'<20000;\nresult = order result by 'AvgTime' desc;\nresult = limit result 2000;",
+                "query": "q = load \"LightningInteractionWithUsers\";\nq = filter q by 'UI_EVENT_TYPE' == \"user\";\nq = filter q by 'UI_EVENT_SOURCE' == \"click\";\nq = filter q by !('TARGET_UI_ELEMENT' == \"relatedListSingleContainer\" || 'TARGET_UI_ELEMENT' is null);\nresult = group q by ('USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID', 'TIMESTAMP_DERIVED_Year', 'TIMESTAMP_DERIVED_Month', 'TIMESTAMP_DERIVED_Day', 'TIMESTAMP_DERIVED_Hour', 'TIMESTAMP_DERIVED_Minute', 'TIMESTAMP_DERIVED_Second');\nresult = foreach result generate q.'USER_ID' as 'USER_ID', q.'SESSION_KEY' as 'SESSION_KEY', q.'DEVICE_SESSION_ID' as 'DEVICE_SESSION_ID', q.'TIMESTAMP_DERIVED_Year' + \"~~~\" + q.'TIMESTAMP_DERIVED_Month' + \"~~~\" + q.'TIMESTAMP_DERIVED_Day' + \"~~~\" + q.'TIMESTAMP_DERIVED_Hour' + \"~~~\" + q.'TIMESTAMP_DERIVED_Minute' + \"~~~\" + q.'TIMESTAMP_DERIVED_Second' as 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second', avg(q.'UI_EVENT_TIMESTAMP') as 'A', unique(q.'DEVICE_SESSION_ID') as 'D';\nresult = group result by ('USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID', 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second');\nresult = foreach result generate 'USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID', 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second', first(A) as 'A', first(D) as 'D', sum(A) - sum(sum(A)) over ([-1..-1] partition by ('SESSION_KEY','DEVICE_SESSION_ID') order by ('SESSION_KEY','DEVICE_SESSION_ID','TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second')) as 'B', (sum(A) - sum(sum(A)) over ([-1..-1] partition by ('SESSION_KEY','DEVICE_SESSION_ID') order by ('SESSION_KEY','DEVICE_SESSION_ID','TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second'))) / 1000 as 'C';\nresult = group result by 'TIMESTAMP_DERIVED_Year~~~TIMESTAMP_DERIVED_Month~~~TIMESTAMP_DERIVED_Day~~~TIMESTAMP_DERIVED_Hour~~~TIMESTAMP_DERIVED_Minute~~~TIMESTAMP_DERIVED_Second';\nresult = group result by ('USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID');\nresult = foreach result generate 'USER_ID', 'SESSION_KEY', 'DEVICE_SESSION_ID',coalesce(avg('C'),0) as 'AvgTime';\nresult = filter result by 'AvgTime'>0;\nresult = group result by ('USER_ID', 'SESSION_KEY');\nresult = foreach result generate 'USER_ID', 'SESSION_KEY',coalesce(avg('AvgTime'),0) as 'AvgTime';\nresult = filter result by 'AvgTime'>0;\nresult = group result by ('USER_ID');\nresult = foreach result generate 'USER_ID', coalesce(avg('AvgTime'),0) as 'AvgTime';\nresult = filter result by 'AvgTime'<20000;\nresult = order result by 'AvgTime' desc;\nresult = limit result 2000;",
                 "receiveFacetSource": {
                     "mode": "all",
                     "steps": []
@@ -5163,8 +5165,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J1CAI",
-                        "label": "LightningInteraction",
-                        "name": "LightningInteraction",
+                        "label": "LightningInteractionWithUsers",
+                        "name": "LightningInteractionWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J1CAI"
                     }
                 ],
@@ -5345,8 +5347,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J3CAI",
-                        "label": "LightningPageView",
-                        "name": "LightningPageView",
+                        "label": "LightningPageViewWithUsers",
+                        "name": "LightningPageViewWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                     }
                 ],
@@ -5505,8 +5507,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J1CAI",
-                        "label": "LightningInteraction",
-                        "name": "LightningInteraction",
+                        "label": "LightningInteractionWithUsers",
+                        "name": "LightningInteractionWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J1CAI"
                     }
                 ],
@@ -5644,8 +5646,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J1CAI",
-                        "label": "LightningInteraction",
-                        "name": "LightningInteraction",
+                        "label": "LightningInteractionWithUsers",
+                        "name": "LightningInteractionWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J1CAI"
                     }
                 ],
@@ -5889,8 +5891,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J1CAI",
-                        "label": "LightningInteraction",
-                        "name": "LightningInteraction",
+                        "label": "LightningInteractionWithUsers",
+                        "name": "LightningInteractionWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J1CAI"
                     }
                 ],
@@ -6146,8 +6148,8 @@
                 "datasets": [
                     {
                         "id": "0Fb09000000r0J3CAI",
-                        "label": "LightningPageView",
-                        "name": "LightningPageView",
+                        "label": "LightningPageViewWithUsers",
+                        "name": "LightningPageViewWithUsers",
                         "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
                     }
                 ],
@@ -6527,7 +6529,7 @@
                     "onboarding": [
                         {
                             "title": "Lightning Page View Event Type",
-                            "url": "https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_eventlogfile_lightningpageview.htm"
+                            "url": "https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_eventlogfile_LightningPageViewWithUsers.htm"
                         }
                     ],
                     "showActionMenu": true
@@ -6997,7 +6999,7 @@
                                     "size": "12px",
                                     "color": "#e6ecf2"
                                 },
-                                "insert": "All Salesforce Lightning pages are made up of 'components'. Examples of components are: Save Button, Quick Action, Detail Tab, a Related List, the drop-down arrow on top of a Related List. This widget filters on the \"user\" value of the UI_EVENT_TYPE column of the LightningInteraction logs."
+                                "insert": "All Salesforce Lightning pages are made up of 'components'. Examples of components are: Save Button, Quick Action, Detail Tab, a Related List, the drop-down arrow on top of a Related List. This widget filters on the \"user\" value of the UI_EVENT_TYPE column of the LightningInteractionWithUsers logs."
                             },
                             {
                                 "attributes": {
@@ -8280,7 +8282,7 @@
                         "title": "Object or Page Name"
                     },
                     "theme": "sunriseDark",
-                    "step": "LightningPageViewHea_1",
+                    "step": "LightningPageViewWithUsersHea_1",
                     "dimensionAxis": {
                         "showTitle": true,
                         "customSize": "auto",
@@ -8489,7 +8491,7 @@
                     "onboarding": [
                         {
                             "title": "Lightning Page View Log Type",
-                            "url": "https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_eventlogfile_lightningpageview.htm"
+                            "url": "https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_eventlogfile_LightningPageViewWithUsers.htm"
                         }
                     ],
                     "theme": "dark",
@@ -9203,14 +9205,14 @@
     "datasets": [
         {
             "id": "0Fb09000000r0J1CAI",
-            "label": "LightningInteraction",
-            "name": "LightningInteraction",
+            "label": "LightningInteractionWithUsers",
+            "name": "LightningInteractionWithUsers",
             "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J1CAI"
         },
         {
             "id": "0Fb09000000r0J3CAI",
-            "label": "LightningPageView",
-            "name": "LightningPageView",
+            "label": "LightningPageViewWithUsers",
+            "name": "LightningPageViewWithUsers",
             "url": "/services/data/v54.0/wave/datasets/0Fb09000000r0J3CAI"
         }
     ]
